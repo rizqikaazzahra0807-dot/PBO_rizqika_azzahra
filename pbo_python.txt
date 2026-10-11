@@ -1,0 +1,23 @@
+class PersegiPanjang:
+    def __init__(self, panjang, lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def luas(self):
+        return self.panjang * self.lebar
+
+    def keliling(self):
+        return 2 * (self.panjang + self.lebar)
+
+
+# Membuat objek
+pp1 = PersegiPanjang(10, 5)
+pp2 = PersegiPanjang(8, 3)
+
+print(f"Persegi Panjang 1 (p={pp1.panjang}, l={pp1.lebar})")
+print(f"Luas     = {pp1.luas()}")
+print(f"Keliling = {pp1.keliling()}")
+
+print(f"Persegi Panjang 2 (p={pp2.panjang}, l={pp2.lebar})")
+print(f"Luas     = {pp2.luas()}")
+print(f"Keliling = {pp2.keliling()}")
